@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.159.130:3306/commonMapper?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=true&nullCatalogMeansCurrent=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    root: warn
+    com.roy.mapper: trace
+  pattern:
+    console: '%p%m%n'
+mybatis-plus:
+  mapper-locations:
+    - com/roy/mapper/*
